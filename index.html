@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+            rel="stylesheet">
+
+        <title>Responsive Web Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Shobhin Thomas Saj</h1>
+        </header>
+        <h2>Please fill out the form below to contact us</h2>
+        <main>
+
+            <form id="usrform">
+                <div class="row">
+                    <div class="col-1">
+                        <label for="name">Full Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="name" name="name"
+                            placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="email">Email: </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="email" id="email" name="email"
+                            placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="phne">Phone number:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="tel" id="phne" name="phne"
+                            placeholder="Phone number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="msg">Message:</label>
+                    </div>
+                    <div class="col-2">
+                        <textarea id="msg" name="msg"
+                            placeholder="Your Message here.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="vhcle">Vehicle:</label>
+                    </div>
+                    <div class="col-2">
+                        <label for="car"><input type="checkbox" id="vhcle"
+                                name="car" value="Car">Car</label>
+                        <label for="motorcycle"><input type="checkbox" id="vhcle"
+                                name="motorcycle" value="Motorcycle">Motorcycle</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Website Designed By: <strong>Shobhin Thomas Saj</strong>
+            <p>&copy; Copyright 2023 <a href="https://www.stclaircollege.ca">St
+                    Clair College</a> All rights reserved</p>
+        </footer>
+    </body>
+</html>

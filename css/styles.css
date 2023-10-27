@@ -1,0 +1,139 @@
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Montaga', serif; */
+/* Styles for mobile devices */
+html {
+    background-color: #999999;
+}
+
+header {
+    background-color: #5f3ce9;
+    font-family: 'Montserrat', sans-serif;
+    color: #90ddf0;
+    font-size: 2vw;
+    padding: 1%;
+    border-bottom: 1px solid #90ddf0;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3vw;
+    padding: 2%;
+
+}
+
+main {
+    border-radius: 10px;
+    background-color: #0a090c;
+    min-height: 90vh;
+    border: 2px solid white;
+    padding: 1% 4%;
+}
+
+
+input[type=submit] {
+    border-radius: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: greenyellow;
+    justify-self: center;
+    width: 120px;
+    height: 40px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(53, 247, 163);
+}
+
+textarea,
+input[type=email],
+input[type=tel],
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+label {
+    font-family: 'Montaga', serif;
+    font-size: 20px;
+    color: #90ddf0;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.col-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Footer section styles*/
+footer {
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 12%;
+    border-top: 2px solid rgb(56, 225, 38);
+    ;
+}
+
+footer p {
+
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: 80%;
+    margin: 0 auto;
+    line-height: 100%;
+    padding: 0.5%;
+}
+
+footer>p>strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Mobile enhancements */
+@media screen and (max-width: 600px) {
+    html {
+        background-color: #000000;
+    }
+
+    .col-1,
+    .col-2,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    label {
+        font-size: 20px;
+        color: #90ddf0;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+}
