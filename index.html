@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
-            rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
         <title>Responsive Web Form</title>
     </head>
     <body>
@@ -23,62 +23,123 @@
         </header>
         <h2>Please fill out the form below to contact us</h2>
         <main>
-
-            <form id="usrform">
-                <div class="row">
-                    <div class="col-1">
-                        <label for="name">Full Name:</label>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <form id="prsnl">
+                    <h2 class="tile_head">Personal Information</h2>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="name">Full Name:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="name" name="name"
+                                placeholder="Your name..">
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <input type="text" id="name" name="name"
-                            placeholder="Your name..">
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="dob">Date of Birth: </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="date" id="dob" name="dob"
+                                placeholder="Date of Birth">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <label for="email">Email: </label>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="gndr">Gender:</label>
+                        </div>
+                        <div class="col-2">
+                            <label for="male"><input type="radio" id="male"
+                                    name="gndr" value="Male">Male</label>
+                            <label for="fmale"><input type="radio" id="fmale"
+                                    name="gndr" value="Female">Female</label>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <input type="email" id="email" name="email"
-                            placeholder="Email">
+                </form>
+              </div>  
+              <div class="swiper-slide">
+                <form id="contact">
+                    <h2 class="tile_head">Contact Information</h2>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="email" id="email" name="email"
+                                placeholder="Email">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <label for="phne">Phone number:</label>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="phne">Phone number:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="tel" id="phne" name="phne"
+                                placeholder="Phone number">
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <input type="tel" id="phne" name="phne"
-                            placeholder="Phone number">
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="msg">Address:</label>
+                        </div>
+                        <div class="col-2">
+                            <textarea id="addrss" name="addrss"
+                                placeholder="Address"
+                                style="height:200px"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <label for="msg">Message:</label>
+                </form>
+              </div>
+              <div class="swiper-slide">
+                <form id="payment">
+                    <h2 class="tile_head">Payment Information</h2>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="cardnum">Credit Card Number:</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="cardnum" name="cardnum"
+                                placeholder="Card Number..">
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <textarea id="msg" name="msg"
-                            placeholder="Your Message here.."
-                            style="height:200px"></textarea>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="expdte">Valid Till: </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="date" id="expdte" name="expdte"
+                                placeholder="Expiry Date">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <label for="vhcle">Vehicle:</label>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="cvv">CVV: </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="cvv" name="cvv"
+                                placeholder="CVV">
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <label for="car"><input type="checkbox" id="vhcle"
-                                name="car" value="Car">Car</label>
-                        <label for="motorcycle"><input type="checkbox" id="vhcle"
-                                name="motorcycle" value="Motorcycle">Motorcycle</label>
-                    </div>
-                </div>
+                </form>
+              </div>
+    
             </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
     </main>
+    
     <footer>
         <p>Website Designed By: <strong>Shobhin Thomas Saj</strong>
             <p>&copy; Copyright 2023 <a href="https://www.stclaircollege.ca">St

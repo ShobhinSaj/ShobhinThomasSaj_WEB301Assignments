@@ -29,15 +29,25 @@ h2 {
     padding: 2%;
 
 }
-
+.tile_head{
+    font-size:2.5vw;
+    color: white;
+    text-decoration: underline;
+}
 main {
     border-radius: 10px;
-    background-color: #0a090c;
+    background-color: #727272;
     min-height: 90vh;
     border: 2px solid white;
     padding: 1% 4%;
 }
-
+.swiper{
+    height: 90vh;
+}
+form{
+    width:85%;
+    margin: 0 auto;
+}
 
 input[type=submit] {
     border-radius: 40px;
@@ -118,8 +128,8 @@ footer>p>strong {
 
 /* Mobile enhancements */
 @media screen and (max-width: 600px) {
-    html {
-        background-color: #000000;
+    html,main{
+        background-color: rgb(89, 231, 162);
     }
 
     .col-1,
@@ -128,12 +138,20 @@ footer>p>strong {
         width: 100%;
         margin-top: 0;
     }
-
-    label {
+    .tile_head,h2{
+        color: #1f1f1f;
         font-size: 20px;
-        color: #90ddf0;
+    }
+    label {
+        font-size: 24px;
+        color: #181db5;
         padding: 12px 12px 12px 0;
         display: inline-block;
     }
-
+    input[type=email],
+    input[type=tel],
+    input[type=text],
+    input[type=date] {
+        height: 48px;
+    }
 }
