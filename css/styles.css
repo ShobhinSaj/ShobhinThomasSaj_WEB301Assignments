@@ -60,7 +60,7 @@ input[type=submit] {
     font-size: 20px;
     background-color: greenyellow;
     justify-self: center;
-    width: 120px;
+    width: 180px;
     height: 40px;
     float: right;
     margin-top: 2%;
@@ -69,21 +69,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(53, 247, 163);
 }
-.svebtn{
-    border-radius: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    background-color: greenyellow;
-    justify-self: center;
-    width: 180px;
-    height: 40px;
-    float: right;
-    margin-top: 2%;
-}
 
-.svebtn:hover {
-    background-color: rgb(53, 247, 163);
-}
 textarea,
 input[type=email],
 input[type=tel],
@@ -167,10 +153,7 @@ footer>p>strong {
         width: 100%;
         margin-top:2%;
     }
-    .svebtn{
-        width: 100%;
-        margin-top:2%;
-    }
+    
     .tile_head,h2{
         color: #1f1f1f;
         font-size: 20px;
