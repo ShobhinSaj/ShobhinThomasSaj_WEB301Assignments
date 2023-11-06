@@ -11,9 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
         <script src="js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
         <script src="js/script.js"></script>
         <title>Responsive Web Form</title>
     </head>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-2">
                             <input type="text" id="name" name="name"
-                                placeholder="Your name..">
+                                placeholder="Your name.." required>
                         </div>
                     </div>
                     <div class="row">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-2">
                             <input type="date" id="dob" name="dob"
-                                placeholder="Date of Birth">
+                                placeholder="Date of Birth" required>
                         </div>
                     </div>
                     <div class="row">
@@ -54,9 +54,9 @@
                         </div>
                         <div class="col-2">
                             <label for="male"><input type="radio" id="male"
-                                    name="gndr" value="Male">Male</label>
+                                    name="gndr" value="Male" required>Male</label>
                             <label for="fmale"><input type="radio" id="fmale"
-                                    name="gndr" value="Female">Female</label>
+                                    name="gndr" value="Female" required>Female</label>
                         </div>
                     </div>
                 </form>
@@ -70,7 +70,9 @@
                         </div>
                         <div class="col-2">
                             <input type="email" id="email" name="email"
-                                placeholder="Email">
+                                placeholder="Email" required
+                                oninvalid="this.setCustomValidity('Please enter a valid email address.')"
+                                oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
@@ -79,7 +81,9 @@
                         </div>
                         <div class="col-2">
                             <input type="tel" id="phne" name="phne"
-                                placeholder="Phone number">
+                                placeholder="Phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                oninvalid="this.setCustomValidity('Please enter a valid phone number in the format XXX-XX-XXXX.')"
+                                oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
@@ -89,7 +93,7 @@
                         <div class="col-2">
                             <textarea id="addrss" name="addrss"
                                 placeholder="Address"
-                                style="height:200px"></textarea>
+                                style="height:200px" required></textarea>
                         </div>
                     </div>
                 </form>
@@ -122,6 +126,9 @@
                         <div class="col-2">
                             <input type="text" id="cvv" name="cvv"
                                 placeholder="CVV">
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Submit">
                         </div>
                     </div>
                 </form>
