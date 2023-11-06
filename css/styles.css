@@ -44,6 +44,11 @@ main {
 .swiper{
     height: 90vh;
 }
+.swiper-button-next::after,.swiper-button-prev::after{
+    content: "";
+    font-weight:900;
+    color: rgb(84, 248, 251);
+}
 form{
     width:85%;
     margin: 0 auto;
@@ -137,7 +142,11 @@ footer>p>strong {
     html,main{
         background-color: rgb(89, 231, 162);
     }
-
+    .swiper-button-next::after,.swiper-button-prev::after{
+        content: "";
+        font-weight:900;
+        color: rgb(115, 22, 255);
+    }
     .col-1,
     .col-2,
     input[type=submit] {
