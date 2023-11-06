@@ -27,7 +27,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div id="slde1" class="swiper-slide">
                 <form id="prsnl">
                     <h2 class="tile_head">Personal Information</h2>
                     <div class="row">
@@ -59,9 +59,12 @@
                                     name="gndr" value="Female" required>Female</label>
                         </div>
                     </div>
+                    <div class="row">
+                        <input type="button" class="svebtn" value="Save & Proceed">
+                    </div>
                 </form>
               </div>  
-              <div class="swiper-slide">
+              <div id="slde2" class="swiper-slide">
                 <form id="contact">
                     <h2 class="tile_head">Contact Information</h2>
                     <div class="row">
@@ -95,10 +98,13 @@
                                 placeholder="Address"
                                 style="height:200px" required></textarea>
                         </div>
+                        <div class="row">
+                            <input class="svebtn" type="button" value="Save & Proceed">
+                        </div>
                     </div>
                 </form>
               </div>
-              <div class="swiper-slide">
+              <div id="slde3" class="swiper-slide">
                 <form id="payment">
                     <h2 class="tile_head">Payment Information</h2>
                     <div class="row">

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    console.log("Working");
+    
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         //direction: 'vertical',
@@ -21,7 +21,12 @@ $(document).ready(function(){
           el: '.swiper-scrollbar',
         },
       });
-      
+      $(".svebtn").click(function() {
+        // Trigger a click on swiper next button
+        
+        $(".swiper-button-next").click();
+       
+      });
       // Form validation using Validate.js plugin
         $("#payment").validate({
           rules: {

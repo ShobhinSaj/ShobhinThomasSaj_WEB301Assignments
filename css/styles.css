@@ -69,7 +69,21 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(53, 247, 163);
 }
+input[type=button] {
+    border-radius: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: greenyellow;
+    justify-self: center;
+    width: 180px;
+    height: 40px;
+    float: right;
+    margin-top: 2%;
+}
 
+input[type=button]:hover {
+    background-color: rgb(53, 247, 163);
+}
 textarea,
 input[type=email],
 input[type=tel],
@@ -150,6 +164,10 @@ footer>p>strong {
     .col-1,
     .col-2,
     input[type=submit] {
+        width: 100%;
+        margin-top:2%;
+    }
+    input[type=button] {
         width: 100%;
         margin-top:2%;
     }
