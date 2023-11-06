@@ -23,9 +23,14 @@ $(document).ready(function(){
       });
       $(".svebtn").click(function() {
         // Trigger a click on swiper next button
-        
+        var formId=null;
+        formId=$(this).closest('form').attr('id');
+        if($("#"+formId).valid()){      //Proceed only if form is valid
         $(".swiper-button-next").click();
-       
+        }
+        else{
+          alert("Please check your inputs before continuing!")
+        }
       });
       // Form validation using Validate.js plugin
         $("#payment").validate({
