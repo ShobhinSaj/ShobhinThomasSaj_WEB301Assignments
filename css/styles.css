@@ -4,12 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url("../img/bg1.jpg");
+}
+#scrollspyHeading1{
+    margin-top: 5%;
+}
+main{
+   
+    margin-top: 1%;
+}
+nav .active{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; 
+    
+}
+.custom-bg {
+    background-color: rgb(43, 255, 0); /* Red background */
+    color: #000000; 
+    font-size: 150%;
+    border-radius: 10px;
+    padding: 0.4%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
 
+    /* White text for better visibility */
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Montaga', serif; */
 /* Styles for mobile devices */
-
-header{
+/* header{
     background-color: cadetblue;
 }
 body {
@@ -29,6 +59,7 @@ img{
 p{
     font-weight: 600;
 }
+ */
 
 /*Footer section styles*/
 footer {
@@ -53,8 +84,8 @@ footer p {
 footer>p>strong {
     font-family: 'Montserrat', sans-serif;
 }
-
-/* Media Queries */
+/* 
+Media Queries
 @media (min-width: 576px) {
 body{
     background-color: khaki;
@@ -62,15 +93,15 @@ body{
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
 body{
     background-color: rgb(96, 206, 160);
 }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+/* @media (min-width: 992px) { 
 body{
     background-color: black;
 }
- }
+ /* } */ 
